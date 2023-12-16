@@ -31,10 +31,13 @@ const Card = ({ movieData, isLiked = false }) => {
 
   const addToList = async () => {
     try {
-      await axios.post("http://localhost:5000/api/user/add", {
-        email,
-        data: movieData,
-      });
+      await axios.post(
+        "https://mern-netflix-clone-pi.vercel.app/api/user/add",
+        {
+          email,
+          data: movieData,
+        }
+      );
     } catch (error) {
       console.log(error);
     }

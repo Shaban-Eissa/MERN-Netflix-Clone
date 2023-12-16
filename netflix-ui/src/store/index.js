@@ -80,7 +80,9 @@ export const getUsersLikedMovies = createAsyncThunk(
   async (email) => {
     const {
       data: { likedMovies },
-    } = await axios.get(`http://localhost:5000/api/user/liked/${email}`);
+    } = await axios.get(
+      `https://mern-netflix-clone-ten.vercel.app/api/user/liked/${email}`
+    );
     return likedMovies;
   }
 );
@@ -90,10 +92,13 @@ export const removeFromLikedMovies = createAsyncThunk(
   async ({ email, movieId }) => {
     const {
       data: { likedMovies },
-    } = await axios.put("http://localhost:5000/api/user/delete", {
-      email,
-      movieId,
-    });
+    } = await axios.put(
+      "https://mern-netflix-clone-ten.vercel.app/api/user/delete",
+      {
+        email,
+        movieId,
+      }
+    );
     return likedMovies;
   }
 );

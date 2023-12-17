@@ -19,7 +19,7 @@ A Netflix clone built using the MERN stack (MongoDB, Express, React, Node.js). T
 <img src="https://github.com/Shaban-Eissa/MERN-Netflix-Clone/assets/49924090/ba63ad42-6861-4504-ac84-e3bba02cf355" width="900" height="380" />
 
 
-Check out the live demo \[here\](#).
+Check out the live demo https://mern-netflix-clone-frontend.vercel.app
 
 ## Features
 
